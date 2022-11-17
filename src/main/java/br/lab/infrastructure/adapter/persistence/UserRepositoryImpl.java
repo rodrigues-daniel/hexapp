@@ -1,11 +1,12 @@
 package br.lab.infrastructure.adapter.persistence;
 
-import br.lab.domain.port.UserRepository;
+import br.lab.domain.model.Order.Order;
+import br.lab.domain.port.OrderRepository;
 
-public class UserRepositoryImpl implements UserRepository {
+public class UserRepositoryImpl implements OrderRepository {
 
     @Override
-    public void add(String string) {
-
+    public void add(Order order) {
+        // salva no banco
     }
 }
