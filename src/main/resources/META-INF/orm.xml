@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm" version="3.0">
+    <entity class="br.lab.domain.model.Order.Order" name="Order">
+        <table name="PEDIDO_TABLE" />
+        <attributes>
+            <id name="id" />
+        </attributes>
+    </entity>
+</entity-mappings>
