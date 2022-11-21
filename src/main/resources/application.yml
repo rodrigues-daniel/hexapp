@@ -16,4 +16,7 @@ spring:
     hibernate:
       ddl-auto: update
 
+server:
+  servlet:
+    context-path: "/v1"
 
