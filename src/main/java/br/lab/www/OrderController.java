@@ -10,10 +10,9 @@ public class OrderController {
 
     @GetMapping("{menssagem}")
     public ResponseEntity index(@PathVariable("menssagem") String aMenssagem ) {
-        var app = ApplicationServiceRegistry();
+        var app = ApplicationServiceRegistry
+                .orderApplicationService().getNome();
 
-
-
-        return  ResponseEntity.ok().body("Hello, World!: " + aMenssagem + "Serviço: " + nome);
+        return  ResponseEntity.ok().body("Hello, World!: " + aMenssagem + "Serviço: " + app);
     }
 }

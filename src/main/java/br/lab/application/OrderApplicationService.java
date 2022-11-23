@@ -1,5 +1,8 @@
 package br.lab.application;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class OrderApplicationService {
     private String nome = "Teste";
 
